@@ -10,6 +10,7 @@ public static class ProceduralGenerationAlgorithms
         path.Add(start_position);
         var previous_position = start_position;
 
+        // Randomly walk the path
         for (int i = 0; i < walk_length; i++)
         {
             var next_position = previous_position + Directions2D.GetRandomDirections();
