@@ -9,4 +9,4 @@ Using random walk and binary space partitioning to create a 2D procedural dungeo
 - https://pixel-poem.itch.io/dungeon-assetpuck
 
 ## Credit:
-Thanks for Sunny Valley Studio (https://github.com/SunnyValleyStudio)
+Thanks to Sunny Valley Studio (https://github.com/SunnyValleyStudio)
