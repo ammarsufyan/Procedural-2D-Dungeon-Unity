@@ -6,10 +6,10 @@ using UnityEngine.Tilemaps;
 public class TilemapVisualizer : MonoBehaviour
 {
     [SerializeField]
-    private Tilemap floorTilemap;
+    private Tilemap floorTilemap, wallTilemap;
 
     [SerializeField]
-    private TileBase floorTile;
+    private TileBase floorTile, wallTop;
 
     // IEnumerable is a generic interface that allows you to iterate over a collection of items
     public void PaintFloorTiles(IEnumerable<Vector2Int> floor_position) 
@@ -34,8 +34,14 @@ public class TilemapVisualizer : MonoBehaviour
         tilemap.SetTile(tile_position, tile);
     }
 
+    internal void PaintSingleBasicWall(Vector2Int position) 
+    {
+        PaintSingleTile(wallTilemap, wallTop, position);
+    }
+
     public void Clear()
     {
         floorTilemap.ClearAllTiles();
+        wallTilemap.ClearAllTiles();
     }
 }

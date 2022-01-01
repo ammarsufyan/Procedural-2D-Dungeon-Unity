@@ -20,4 +20,21 @@ public static class ProceduralGenerationAlgorithms
 
         return path;
     }
+
+    // use list (because ordered) to access the last position of the path
+    public static List<Vector2Int> RandomWalkCorridor(Vector2Int start_position, int corridor_length)
+    {
+        List<Vector2Int> corridor = new List<Vector2Int>();
+        var direction = Directions2D.GetRandomDirections();
+        var current_position = start_position;
+        corridor.Add(current_position);
+
+        for (int i = 0; i < corridor_length; i++)
+        {
+            current_position = current_position + direction;
+            corridor.Add(current_position);
+        }
+
+        return corridor;
+    }
 }
