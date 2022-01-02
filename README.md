@@ -8,5 +8,12 @@ Using random walk and binary space partitioning to create a 2D procedural dungeo
 ## Assets:
 - https://pixel-poem.itch.io/dungeon-assetpuck
 
+## Results:
+### Binary Space Partitioning:
+![image](https://raw.githubusercontent.com/ammarsufyan/procedural-2d-dungeon-unity/main/Screenshot/BinarySpacePartitioning.png)
+
+### Binary Space Partitioning + Random Walk
+![image](https://raw.githubusercontent.com/ammarsufyan/procedural-2d-dungeon-unity/main/Screenshot/BinarySpacePartitioningAndRandomWalk.png)
+
 ## Credit:
 Thanks to Sunny Valley Studio (https://github.com/SunnyValleyStudio)
